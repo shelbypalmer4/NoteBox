@@ -18,7 +18,7 @@ a<-fir(a,
        bandpass = T,
        output = "Wave")
 
-# get temporal measuremnts for your song
+# get temporal measurements for your song
 aTime<-timer(a,
               dmin=0.05, # minimum duration for signal detection
               envt="hil", #Hilbert envelope type
