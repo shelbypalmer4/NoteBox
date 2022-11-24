@@ -1,14 +1,14 @@
 #### The purpose of this script is to generate acoustic measurements of individual syllables of bird vocalizations that have been segmented ("chopped") into a series of .wav files at the song level.
 
 # set working directory to the location of your song files
-setwd("YourWD")
+setwd("C:/Users/Shelby Palmer/Desktop/PracticeData")
 
 # load required packages
 library(seewave)
 library(tuneR)
 
 # We will practice on 1 song file first
-a<-readWave("YourWave.wav") # read in your song file
+a<-readWave("Gm_GO_1.wav") # read in your song file
 a # looking at the properties of the file
 
 # filtering
@@ -109,7 +109,7 @@ AbsPFmaxslope<-function(x) {
 
 #### Generating a dataframe for our practice file ####
 Notes<-data.frame(note_num=seq(1:length(aTime$s.start)), 
-                    file_name=rep("YourWave.wav"))
+                    file_name=rep("Gm_GO_1.wav"))
 
 # this for loop generates the following measurements and adds them to aDF:
 ## note duration
