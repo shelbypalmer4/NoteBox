@@ -212,3 +212,4 @@ for (i in 2:length(list.files())) {
   }
   Notes<-rbind(Notes, b)
 }
+View(Notes)
